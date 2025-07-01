@@ -297,7 +297,7 @@ leaflet(cropestab_map2,
 :::
 :::
 
-## Yield distribution for Direct Seeding (RBFHS 2021 WS) {.tiny-text}
+## Yield distribution (fresh) for Direct Seeding (RBFHS 2021 WS) {.extra-tiny-text}
 
 ```{r}
 
@@ -341,7 +341,7 @@ yield_cropestab |>
 :::
 
 ::: value-title
-National yield average for Direct Seeding (RBFHS 2021 WS)
+National yield average (fresh) for Direct Seeding (RBFHS 2021 WS)
 :::
 :::
 :::
@@ -403,7 +403,7 @@ leaflet(yield_dsmap2,
   ) %>%
     addLegend(pal = yield_pal_dsmap, 
               values = ~direct_yield, 
-              title = htmltools::HTML("2021WS Average Yield of Palay<br> in Direct seeded areas, by province"), 
+              title = htmltools::HTML("2021WS Average Yield of Fresh Palay<br> in Direct seeded areas, by province"), 
               
               opacity = 0.7,
               labFormat = function(type, cuts, p) {
@@ -415,7 +415,7 @@ leaflet(yield_dsmap2,
               },
               na.label = "No production") |> 
     addControl(
-    html = "<div style='font-size: 12px;font-style: italic;'>Source:<br>PSA</div>",
+    html = "<div style='font-size: 12px;font-style: italic;'>Source:<br>RBFHS 2021-2022</div>",
     position = "bottomleft"
   )
 
@@ -424,7 +424,7 @@ leaflet(yield_dsmap2,
 :::
 
 
-## Yield distribution for Direct Seeding (RBFHS 2022 DS) {.tiny-text}
+## Yield distribution (fresh) for Direct Seeding (RBFHS 2022 DS) {.extra-tiny-text}
 
 ::: columns
 ::: {.column width="30%"}
@@ -435,7 +435,7 @@ leaflet(yield_dsmap2,
 :::
 
 ::: value-title
-National yield average for Direct Seeding (RBFHS 2022 DS)
+National yield average (fresh) for Direct Seeding (RBFHS 2022 DS)
 :::
 :::
 :::
@@ -497,7 +497,7 @@ leaflet(yield_dsmap22b,
   ) %>%
     addLegend(pal = yield_pal_dsmap22, 
               values = ~direct_yield, 
-              title = htmltools::HTML("2022DS Average Yield of Palay<br> in Direct seeded areas, by province"), 
+              title = htmltools::HTML("2022DS Average Yield of Fresh Palay<br> in Direct seeded areas, by province"), 
               
               opacity = 0.7,
               labFormat = function(type, cuts, p) {
@@ -509,7 +509,7 @@ leaflet(yield_dsmap22b,
               },
               na.label = "No production") |> 
     addControl(
-    html = "<div style='font-size: 12px;font-style: italic;'>Source:<br>PSA</div>",
+    html = "<div style='font-size: 12px;font-style: italic;'>Source:<br>RBFHS 2021-2022</div>",
     position = "bottomleft"
   )
 
@@ -517,7 +517,7 @@ leaflet(yield_dsmap22b,
 :::
 :::
 
-## Yield distribution for Transplanting (RBFHS 2021 WS) {.tiny-text}
+## Yield distribution (fresh) for Transplanting (RBFHS 2021 WS) {.extra-tiny-text}
 
 ::: columns
 ::: {.column width="30%"}
@@ -528,7 +528,8 @@ leaflet(yield_dsmap22b,
 :::
 
 ::: value-title
-National yield average for Transplanting (RBFHS 2021 WS)
+National yield average (fresh) for Transplanting 
+(RBFHS 2021 WS)
 :::
 :::
 :::
@@ -590,7 +591,7 @@ leaflet(yield_trmap2,
   ) %>%
     addLegend(pal = yield_pal_trmap, 
               values = ~trans_yield, 
-              title = htmltools::HTML("2021WS Average Yield of Palay<br> in Transplanted areas, by province"), 
+              title = htmltools::HTML("2021WS Average Yield of Fresh Palay<br> in Transplanted areas, by province"), 
               
               opacity = 0.7,
               labFormat = function(type, cuts, p) {
@@ -602,7 +603,7 @@ leaflet(yield_trmap2,
               },
               na.label = "No production") |> 
     addControl(
-    html = "<div style='font-size: 12px;font-style: italic;'>Source:<br>PSA</div>",
+    html = "<div style='font-size: 12px;font-style: italic;'>Source:<br>RBFHS 2021-2022</div>",
     position = "bottomleft"
   )
 
@@ -611,7 +612,7 @@ leaflet(yield_trmap2,
 :::
 
 
-## Yield distribution for Transplanting (RBFHS 2022 DS) {.tiny-text}
+## Yield distribution (fresh) for Transplanting (RBFHS 2022 DS) {.extra-tiny-text}
 
 ::: columns
 ::: {.column width="30%"}
@@ -622,7 +623,7 @@ leaflet(yield_trmap2,
 :::
 
 ::: value-title
-National yield average for Direct Seeding (RBFHS 2022 DS)
+National yield average (fresh) for Transplanting (RBFHS 2022 DS)
 :::
 :::
 :::
@@ -684,7 +685,7 @@ leaflet(yield_trmap22b,
   ) %>%
     addLegend(pal = yield_pal_trmap22, 
               values = ~trans_yield, 
-              title = htmltools::HTML("2022DS Average Yield of Palay<br> in Transplanted areas, by province"), 
+              title = htmltools::HTML("2022DS Average Yield of Fresh Palay<br> in Transplanted areas, by province"), 
               
               opacity = 0.7,
               labFormat = function(type, cuts, p) {
@@ -696,7 +697,7 @@ leaflet(yield_trmap22b,
               },
               na.label = "No production") |> 
     addControl(
-    html = "<div style='font-size: 12px;font-style: italic;'>Source:<br>PSA</div>",
+    html = "<div style='font-size: 12px;font-style: italic;'>Source:<br>RBFHS 2021-2022</div>",
     position = "bottomleft"
   )
 
